@@ -1,0 +1,58 @@
+body,
+html {
+    height: 100%;
+    margin: 0 auto;
+    letter-spacing: 2px;
+    font-size: 10px;
+}
+
+div {
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 5%;
+}
+
+.parallax-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50%;
+}
+
+.img-bg-01 {
+    background-image: url(../img/boke1209P1092_TP_V4.jpg);
+}
+
+.img-bg-02 {
+    background-image: url(../img/DSCF4663-Edit_TP_V4.jpg);
+}
+
+.img-bg-03 {
+    background-image: url(../img/KAZUKIHIRO81014_TP_V4.jpg);
+}
+
+.img-bg-04 {
+    background-image: url(../img/kazukisuicyu_TP_V4.jpg);
+}
+
+.scrollbox1 {
+    background-color: #111;
+}
+.scrollbox2 {
+    background-color: #111;
+}
+.scrollbox3 {
+    background-color: #111;
+}
+.scrollbox4 {
+    background-color: #111;
+}
+.scrollbox5 {
+    background-color: #111;
+}
