@@ -56,3 +56,12 @@ div {
 .scrollbox5 {
     background-color: #111;
 }
+
+footer {
+    line-height: 1.4;
+    padding: 15px;
+    background-color: #62728C;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
