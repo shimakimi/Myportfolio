@@ -1,67 +1,152 @@
-body,
-html {
-    height: 100%;
-    margin: 0 auto;
-    letter-spacing: 2px;
-    font-size: 10px;
+body {
+  align-items: center;
 }
 
-div {
-    box-sizing: border-box;
-    color: #fff;
-    font-size: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    padding: 5%;
+
+/* header */
+
+.hero {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../img/jifgjoerghnfh_TP_V.jpg);
 }
 
-.parallax-bg {
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 50%;
+.overlay::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
 }
 
-.img-bg-01 {
-    background-image: url(../img/boke1209P1092_TP_V4.jpg);
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 100;
 }
 
-.img-bg-02 {
-    background-image: url(../img/DSCF4663-Edit_TP_V4.jpg);
+.title {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.2;
+  padding: 0 50px;
+  text-align: center;
+  color: #fff;
 }
 
-.img-bg-03 {
-    background-image: url(../img/KAZUKIHIRO81014_TP_V4.jpg);
+/* main */
+
+.container {
+  width:320px ;
+  height: 240px;
+  padding: auto;
+  margin: auto;
+  text-align: center;
 }
 
-.img-bg-04 {
-    background-image: url(../img/kazukisuicyu_TP_V4.jpg);
+.container h1 {
+  text-align: center;
 }
 
-.scrollbox1 {
-    background-color: #111;
+.sen {
+  border-width: 3px;
+  border-style: dashed double;
 }
-.scrollbox2 {
-    background-color: #111;
+
+.hoge {
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.2);
 }
-.scrollbox3 {
-    background-color: #111;
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: center;
+  padding: 1em 2em;
+  width: 300px;
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #cccccc;
+  border-radius: 50vh;
+  text-decoration: none;
 }
-.scrollbox4 {
-    background-color: #111;
+
+.button:after {
+ content: '';
+ width: 5px;
+ height: 5px;
+ border-top: 3px solid #333333;
+ border-right: 3px solid #333333;
+ transform: rotate(45deg);
+ text-decoration: none;
 }
-.scrollbox5 {
-    background-color: #111;
+
+.button a:hover {
+  text-decoration: none;
+  background-color: #bbbbbb;
+  text-decoration: none;
 }
+
+.move {
+  animation: move 2s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(2px, 0px);
+  }
+  5% {
+    transform: translate(-2px, 0px);
+  }
+  10% {
+    transform: translate(-2px, 0px);
+  }
+  15% {
+    transform: translate(-2px, 0px);
+  }
+  20% {
+    transform: translate(2px, 0px);
+  }
+  25% {
+    transform: translate(-2px, 0px);
+  }
+  30% {
+    transform: translate(0px, 0px);
+  }
+}
+
+
+/* footer */
 
 footer {
-    line-height: 1.4;
-    padding: 15px;
-    background-color: #62728C;
-    color: #fff;
-    font-size: 12px;
-    text-align: center;
+  width: auto;
+  padding: auto;
+  text-align: center;
+}
+
+/* animation */
+
+/* animation */
+
+.animate {
+  opacity: 0;
+  transition: opacity .3s, transform .3s;
+}
+
+.animate.appear {
+  opacity: 1;
+  transform: none;
 }
